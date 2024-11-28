@@ -1,0 +1,45 @@
+2024-11-26 19:04:07,239 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2024-11-26 19:04:07,605 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'deploy']
+2024-11-26 19:04:07,638 DEBUG    root            Running [gcloud.functions.deploy] with arguments: [--entry-point: "gcs_trigger", --runtime: "python312", --set-env-vars: "OrderedDict([('PROJECT_ID', 'inspired-photon-441609-k7'), ('TOPIC_ID', 'gcs-trigger-topic')])", --source: "./pubsub_function.py", --trigger-event: "google.storage.object.finalize", --trigger-resource: "main-bucket-5505", NAME: "gcs-to-pubsub"]
+2024-11-26 19:04:07,796 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-26 19:04:07,885 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json HTTP/1.1" 404 None
+2024-11-26 19:04:07,888 INFO     ___FILE_ONLY___ As of this Cloud SDK release, new functions will be deployed as 2nd gen  functions by default. This is equivalent to currently deploying new  with the --gen2 flag. Existing 1st gen functions will not be impacted and will continue to deploy as 1st gen functions.
+You can disable this behavior by explicitly specifying the --no-gen2 flag or by setting the functions/gen2 config property to 'off'.
+To learn more about the differences between 1st gen and 2nd gen functions, visit:
+https://cloud.google.com/functions/docs/concepts/version-comparison
+
+2024-11-26 19:04:08,016 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-26 19:04:08,114 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json HTTP/1.1" 404 None
+2024-11-26 19:04:08,119 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-26 19:04:08,213 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/runtimes?alt=json HTTP/1.1" 200 None
+2024-11-26 19:04:08,240 DEBUG    root            (gcloud.functions.deploy) Invalid value for [--source]: Provided path does not point to a directory
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/backend.py", line 843, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/functions/v1/util.py", line 387, in CatchHTTPErrorRaiseHTTPExceptionFn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/util.py", line 86, in Run
+    return self._RunV2(args)
+           ^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/surface/functions/deploy.py", line 144, in _RunV2
+    return command_v2.Run(args, self.ReleaseTrack())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/v2/deploy/command.py", line 1269, in Run
+    build_config, build_updated_fields = _GetBuildConfig(
+                                         ^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/v2/deploy/command.py", line 785, in _GetBuildConfig
+    function_source, source_updated_fields = _GetSource(
+                                             ^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/v2/deploy/command.py", line 315, in _GetSource
+    source_util.ValidateDirectoryHasRequiredRuntimeFiles(source, runtime)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/source_util.py", line 123, in ValidateDirectoryHasRequiredRuntimeFiles
+    _ValidateDirectoryExistsOrRaise(source)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/source_util.py", line 93, in _ValidateDirectoryExistsOrRaise
+    raise exceptions.SourceArgumentError(
+googlecloudsdk.command_lib.functions.exceptions.SourceArgumentError: Invalid value for [--source]: Provided path does not point to a directory
+2024-11-26 19:04:08,243 ERROR    root            (gcloud.functions.deploy) Invalid value for [--source]: Provided path does not point to a directory

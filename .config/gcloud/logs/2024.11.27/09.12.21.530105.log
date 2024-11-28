@@ -1,0 +1,173 @@
+2024-11-27 09:12:21,533 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2024-11-27 09:12:21,968 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'deploy']
+2024-11-27 09:12:22,004 DEBUG    root            Running [gcloud.functions.deploy] with arguments: [--entry-point: "gcs_trigger", --runtime: "python312", --set-env-vars: "OrderedDict([('PROJECT_ID', 'inspired-photon-441609-k7'), ('TOPIC_ID', 'gcs-trigger-topic')])", --source: "./pubsub_script", --trigger-event: "google.storage.object.finalize", --trigger-resource: "main-bucket-5505", NAME: "gcs-to-pubsub"]
+2024-11-27 09:12:22,188 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:22,286 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json HTTP/1.1" 404 None
+2024-11-27 09:12:22,290 INFO     ___FILE_ONLY___ As of this Cloud SDK release, new functions will be deployed as 2nd gen  functions by default. This is equivalent to currently deploying new  with the --gen2 flag. Existing 1st gen functions will not be impacted and will continue to deploy as 1st gen functions.
+You can disable this behavior by explicitly specifying the --no-gen2 flag or by setting the functions/gen2 config property to 'off'.
+To learn more about the differences between 1st gen and 2nd gen functions, visit:
+https://cloud.google.com/functions/docs/concepts/version-comparison
+
+2024-11-27 09:12:22,433 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:22,514 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json HTTP/1.1" 404 None
+2024-11-27 09:12:22,519 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:22,604 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/runtimes?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:22,633 INFO     root            Not using ignore file.
+2024-11-27 09:12:22,642 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:22,810 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "POST /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions:generateUploadUrl?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:22,818 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2024-11-27 09:12:22,976 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "PUT /gcf-v2-uploads-644941739395.us-central1.cloudfunctions.appspot.com/a7b86da9-9bc6-4981-acc3-8ba998b2f2a2.zip?GoogleAccessId=service-644941739395%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1732700542&Signature=CWtg4w6rYUPCa0ZIfAO9VqgFuNcapQi%2FYrUcs8Pp3BaB%2BUz6bdjvjfPxS61bIwB8by6UwEm8o0iWdgSx35MrkJmm1Z%2FWY%2FJs%2FzmuyUsxb2IVfuopKU%2BvV3y1x4unH6s7AilhLikNP0W%2BKthvY2tTtPf26MIfFkXAnuWG6Nyhnxy%2Fi%2FyWWJahMNBIkbM0S1WbHid8cKSwE3DCt8hgnYfbrjGHrT5B66h9ulXFqM%2F4KNKqHwnbW5cVtWVCuAtmhYTKb9194tguRz7SasdKow9cdnuzXhVQoCbUYiTazTnFFAttQAGIgDT9So5ijQOa7jPbdjuXPPDV7uf6hOjCJjFb8A%3D%3D HTTP/1.1" 200 0
+2024-11-27 09:12:23,063 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 09:12:23,221 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/run.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-27 09:12:23,224 INFO     root            Could not verify if service run.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-27 09:12:23,295 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 09:12:23,523 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/cloudbuild.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-27 09:12:23,526 INFO     root            Could not verify if service cloudbuild.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-27 09:12:23,595 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 09:12:23,827 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/artifactregistry.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-27 09:12:23,829 INFO     root            Could not verify if service artifactregistry.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-27 09:12:24,032 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2024-11-27 09:12:24,162 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/locations/us-central1/defaultServiceAccount?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:24,317 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-11-27 09:12:24,404 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:24,546 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-11-27 09:12:24,736 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7:getIamPolicy?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:24,749 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:25,850 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "POST /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions?alt=json&functionId=gcs-to-pubsub HTTP/1.1" 200 None
+2024-11-27 09:12:25,854 INFO     ___FILE_ONLY___ Preparing function...
+2024-11-27 09:12:25,857 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:25,943 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:27,921 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:28,008 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:28,060 INFO     ___FILE_ONLY___ Deploying function...
+2024-11-27 09:12:28,064 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:28,164 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:29,935 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:30,020 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:31,909 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:31,997 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:33,661 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:33,756 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:34,979 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:35,071 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:36,934 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:37,023 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:38,343 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:38,434 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:39,648 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:39,741 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:41,102 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:41,165 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:42,768 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:42,839 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:44,574 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:44,666 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:45,916 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:46,012 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:47,614 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:47,680 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:49,113 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:49,200 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:50,512 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:50,576 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:52,484 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:52,569 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:54,214 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:54,309 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:55,839 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:55,921 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:57,554 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:57,622 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:12:58,848 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:12:58,932 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:00,687 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:00,748 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:02,393 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:02,477 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:03,941 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:04,003 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:05,236 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:05,300 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:06,406 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:06,474 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:07,746 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:07,803 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:09,565 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:09,652 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:11,635 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:11,708 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:13,265 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:13,325 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:15,220 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:15,293 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:16,889 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:16,984 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:18,914 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:19,007 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:20,297 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:20,369 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:22,290 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:22,362 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:24,366 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:24,428 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:25,585 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:25,654 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:27,140 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:27,214 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:29,168 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:29,242 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:30,699 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:30,785 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:32,745 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:32,809 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:34,507 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:34,576 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:35,748 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:35,811 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:37,433 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:37,506 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:39,444 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:39,512 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:41,365 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:41,461 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:43,206 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:43,297 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:44,634 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 09:13:44,694 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732698744837-627e15d30566d-f0da613c-7244fc7a?alt=json HTTP/1.1" 200 None
+2024-11-27 09:13:44,756 DEBUG    root            (gcloud.functions.deploy) OperationError: code=3, message=Creating trigger failed for projects/inspired-photon-441609-k7/locations/us-central1/triggers/gcs-to-pubsub-444118: Failed to update storage bucket metadata. Possible causes include:
+- Cloud Storage service agent not being able to read the Cloud Pub/Sub topic (projects/inspired-photon-441609-k7/topics/eventarc-us-central1-gcs-to-pubsub-444118-309) created by Eventarc. (See https://cloud.google.com/eventarc/docs/run/quickstart-storage#before-you-begin)
+- Notification quota exceeded for the GCS bucket (main-bucket-5505). (See https://cloud.google.com/storage/quotas#buckets): invalid argument
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/backend.py", line 843, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/functions/v1/util.py", line 387, in CatchHTTPErrorRaiseHTTPExceptionFn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/util.py", line 86, in Run
+    return self._RunV2(args)
+           ^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/surface/functions/deploy.py", line 144, in _RunV2
+    return command_v2.Run(args, self.ReleaseTrack())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/v2/deploy/command.py", line 1316, in Run
+    _CreateAndWait(client, function_ref, function)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/v2/deploy/command.py", line 1143, in _CreateAndWait
+    api_util.WaitForOperation(
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/functions/v2/util.py", line 334, in WaitForOperation
+    operation = retryer.RetryOnResult(
+                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/core/util/retry.py", line 239, in RetryOnResult
+    result = func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/functions/v2/util.py", line 226, in _GetOperationAndLogProgress
+    raise exceptions.StatusToFunctionsError(
+googlecloudsdk.api_lib.functions.v2.exceptions.FunctionsError: OperationError: code=3, message=Creating trigger failed for projects/inspired-photon-441609-k7/locations/us-central1/triggers/gcs-to-pubsub-444118: Failed to update storage bucket metadata. Possible causes include:
+- Cloud Storage service agent not being able to read the Cloud Pub/Sub topic (projects/inspired-photon-441609-k7/topics/eventarc-us-central1-gcs-to-pubsub-444118-309) created by Eventarc. (See https://cloud.google.com/eventarc/docs/run/quickstart-storage#before-you-begin)
+- Notification quota exceeded for the GCS bucket (main-bucket-5505). (See https://cloud.google.com/storage/quotas#buckets): invalid argument
+2024-11-27 09:13:44,760 ERROR    root            (gcloud.functions.deploy) OperationError: code=3, message=Creating trigger failed for projects/inspired-photon-441609-k7/locations/us-central1/triggers/gcs-to-pubsub-444118: Failed to update storage bucket metadata. Possible causes include:
+- Cloud Storage service agent not being able to read the Cloud Pub/Sub topic (projects/inspired-photon-441609-k7/topics/eventarc-us-central1-gcs-to-pubsub-444118-309) created by Eventarc. (See https://cloud.google.com/eventarc/docs/run/quickstart-storage#before-you-begin)
+- Notification quota exceeded for the GCS bucket (main-bucket-5505). (See https://cloud.google.com/storage/quotas#buckets): invalid argument

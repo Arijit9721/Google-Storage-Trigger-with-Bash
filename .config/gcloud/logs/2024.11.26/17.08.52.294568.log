@@ -1,0 +1,255 @@
+2024-11-26 17:08:52,320 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-11-26 17:08:52,375 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'add_iam_policy_binding']
+2024-11-26 17:08:52,391 DEBUG    root            Running [gcloud.projects.add-iam-policy-binding] with arguments: [--member: "serviceAccount:trigger-account@inspired-photon-441609-k7.iam.gserviceaccount.com", --role: "projects/inspired-photon-441609-k7/roles/main_custom_role", PROJECT_ID: "inspired-photon-441609-k7"]
+2024-11-26 17:08:52,558 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-11-26 17:08:52,730 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7:getIamPolicy?alt=json HTTP/1.1" 200 None
+2024-11-26 17:08:52,876 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-11-26 17:08:53,381 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7:setIamPolicy?alt=json HTTP/1.1" 200 None
+2024-11-26 17:08:53,386 INFO     ___FILE_ONLY___ Updated IAM policy for project [inspired-photon-441609-k7].
+
+2024-11-26 17:08:53,386 DEBUG    root            Chosen display Format:default
+2024-11-26 17:08:53,388 INFO     root            Display format: "default"
+2024-11-26 17:08:53,414 INFO     ___FILE_ONLY___ bindings
+2024-11-26 17:08:53,414 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,414 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,414 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,414 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,415 INFO     ___FILE_ONLY___ members
+2024-11-26 17:08:53,415 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,415 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,415 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,415 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,415 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,415 INFO     ___FILE_ONLY___ serviceAccount:trigger-account@inspired-photon-441609-k7.iam.gserviceaccount.com
+2024-11-26 17:08:53,415 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,415 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,416 INFO     ___FILE_ONLY___ role
+2024-11-26 17:08:53,416 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,416 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,416 INFO     ___FILE_ONLY___ projects/inspired-photon-441609-k7/roles/main_custom_role
+2024-11-26 17:08:53,416 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,416 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,416 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,416 INFO     ___FILE_ONLY___ members
+2024-11-26 17:08:53,416 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,417 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,417 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,417 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,417 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,417 INFO     ___FILE_ONLY___ serviceAccount:service-644941739395@gcf-admin-robot.iam.gserviceaccount.com
+2024-11-26 17:08:53,417 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,417 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,417 INFO     ___FILE_ONLY___ role
+2024-11-26 17:08:53,417 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,418 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,418 INFO     ___FILE_ONLY___ roles/cloudfunctions.serviceAgent
+2024-11-26 17:08:53,418 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,418 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,418 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,418 INFO     ___FILE_ONLY___ members
+2024-11-26 17:08:53,418 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,418 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,418 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,418 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,419 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,419 INFO     ___FILE_ONLY___ serviceAccount:vm-creater-account@inspired-photon-441609-k7.iam.gserviceaccount.com
+2024-11-26 17:08:53,419 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,419 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,419 INFO     ___FILE_ONLY___ role
+2024-11-26 17:08:53,419 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,419 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,419 INFO     ___FILE_ONLY___ roles/compute.instanceAdmin.v1
+2024-11-26 17:08:53,419 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,419 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,420 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,420 INFO     ___FILE_ONLY___ members
+2024-11-26 17:08:53,420 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,420 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,420 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,420 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,420 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,420 INFO     ___FILE_ONLY___ serviceAccount:vm-creater-account@inspired-photon-441609-k7.iam.gserviceaccount.com
+2024-11-26 17:08:53,420 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,420 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,420 INFO     ___FILE_ONLY___ role
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___ roles/compute.networkUser
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___ members
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,421 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,422 INFO     ___FILE_ONLY___ serviceAccount:service-644941739395@compute-system.iam.gserviceaccount.com
+2024-11-26 17:08:53,422 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,422 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,422 INFO     ___FILE_ONLY___ role
+2024-11-26 17:08:53,422 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,422 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,422 INFO     ___FILE_ONLY___ roles/compute.serviceAgent
+2024-11-26 17:08:53,422 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,422 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,422 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,422 INFO     ___FILE_ONLY___ members
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___ serviceAccount:644941739395-compute@developer.gserviceaccount.com
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___ serviceAccount:644941739395@cloudservices.gserviceaccount.com
+2024-11-26 17:08:53,423 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,424 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,424 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,424 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,424 INFO     ___FILE_ONLY___ serviceAccount:inspired-photon-441609-k7@appspot.gserviceaccount.com
+2024-11-26 17:08:53,424 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,424 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,424 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,424 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,424 INFO     ___FILE_ONLY___ serviceAccount:vm-creater-account@inspired-photon-441609-k7.iam.gserviceaccount.com
+2024-11-26 17:08:53,424 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,424 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___ role
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___ roles/editor
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___ members
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,425 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,426 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,426 INFO     ___FILE_ONLY___ serviceAccount:trigger-account@inspired-photon-441609-k7.iam.gserviceaccount.com
+2024-11-26 17:08:53,426 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,426 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,426 INFO     ___FILE_ONLY___ role
+2024-11-26 17:08:53,426 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,426 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,426 INFO     ___FILE_ONLY___ roles/iam.roleAdmin
+2024-11-26 17:08:53,426 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,426 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,426 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___ members
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___ serviceAccount:vm-creater-account@inspired-photon-441609-k7.iam.gserviceaccount.com
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___ role
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,427 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___ roles/iam.serviceAccountUser
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___ members
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___ user:das03285@gmail.com
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,428 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___ role
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___ roles/owner
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___ members
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,429 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,430 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,430 INFO     ___FILE_ONLY___ serviceAccount:service-644941739395@gcp-sa-pubsub.iam.gserviceaccount.com
+2024-11-26 17:08:53,430 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,430 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,430 INFO     ___FILE_ONLY___ role
+2024-11-26 17:08:53,430 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,430 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,430 INFO     ___FILE_ONLY___ roles/pubsub.serviceAgent
+2024-11-26 17:08:53,430 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,431 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,431 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,431 INFO     ___FILE_ONLY___ members
+2024-11-26 17:08:53,431 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,431 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,431 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,431 INFO     ___FILE_ONLY___ -
+2024-11-26 17:08:53,431 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,431 INFO     ___FILE_ONLY___ serviceAccount:trigger-account@inspired-photon-441609-k7.iam.gserviceaccount.com
+2024-11-26 17:08:53,432 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,432 INFO     ___FILE_ONLY___   
+2024-11-26 17:08:53,432 INFO     ___FILE_ONLY___ role
+2024-11-26 17:08:53,432 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,432 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,432 INFO     ___FILE_ONLY___ roles/resourcemanager.projectIamAdmin
+2024-11-26 17:08:53,432 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,432 INFO     ___FILE_ONLY___ etag
+2024-11-26 17:08:53,432 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,432 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,433 INFO     ___FILE_ONLY___ BwYn0-dbTYY=
+2024-11-26 17:08:53,433 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,433 INFO     ___FILE_ONLY___ version
+2024-11-26 17:08:53,433 INFO     ___FILE_ONLY___ :
+2024-11-26 17:08:53,433 INFO     ___FILE_ONLY___  
+2024-11-26 17:08:53,433 INFO     ___FILE_ONLY___ 1
+2024-11-26 17:08:53,433 INFO     ___FILE_ONLY___ 
+
+2024-11-26 17:08:53,434 DEBUG    root            SDK update checks are disabled.

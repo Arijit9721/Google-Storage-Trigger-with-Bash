@@ -1,0 +1,89 @@
+2024-11-26 15:07:13,914 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2024-11-26 15:07:13,916 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'roles']
+2024-11-26 15:07:13,942 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'roles', 'create']
+2024-11-26 15:07:13,945 DEBUG    root            Running [gcloud.iam.roles.create] with arguments: [--permissions: "storage.objects.get,storage.objects.create,pubsub.topics.publish,cloudfunctions.functions.invoke", --project: "inspired-photon-441609-k7", --title: "Custom role for needed services_5", ROLE_ID: "main_custom_role5"]
+2024-11-26 15:07:14,105 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:14,519 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:14,597 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:15,070 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:15,143 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:15,536 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:15,608 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:15,898 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:15,956 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:16,469 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:16,543 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:16,995 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:17,068 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:17,438 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:17,508 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:17,798 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:17,871 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:18,302 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:18,378 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:18,877 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:18,950 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:19,304 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:19,323 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 15:07:19,723 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7/roles?alt=json HTTP/1.1" 200 None
+2024-11-26 15:07:19,726 INFO     ___FILE_ONLY___ Created role [main_custom_role5].
+
+2024-11-26 15:07:19,728 DEBUG    root            Chosen display Format:default
+2024-11-26 15:07:19,730 INFO     root            Display format: "default"
+2024-11-26 15:07:19,783 INFO     ___FILE_ONLY___ etag
+2024-11-26 15:07:19,783 INFO     ___FILE_ONLY___ :
+2024-11-26 15:07:19,783 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,783 INFO     ___FILE_ONLY___ BwYn0jSetYk=
+2024-11-26 15:07:19,784 INFO     ___FILE_ONLY___ 
+
+2024-11-26 15:07:19,784 INFO     ___FILE_ONLY___ includedPermissions
+2024-11-26 15:07:19,784 INFO     ___FILE_ONLY___ :
+2024-11-26 15:07:19,784 INFO     ___FILE_ONLY___ 
+
+2024-11-26 15:07:19,784 INFO     ___FILE_ONLY___ -
+2024-11-26 15:07:19,784 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,784 INFO     ___FILE_ONLY___ cloudfunctions.functions.invoke
+2024-11-26 15:07:19,784 INFO     ___FILE_ONLY___ 
+
+2024-11-26 15:07:19,785 INFO     ___FILE_ONLY___ -
+2024-11-26 15:07:19,785 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,785 INFO     ___FILE_ONLY___ pubsub.topics.publish
+2024-11-26 15:07:19,785 INFO     ___FILE_ONLY___ 
+
+2024-11-26 15:07:19,785 INFO     ___FILE_ONLY___ -
+2024-11-26 15:07:19,785 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,785 INFO     ___FILE_ONLY___ storage.objects.create
+2024-11-26 15:07:19,785 INFO     ___FILE_ONLY___ 
+
+2024-11-26 15:07:19,785 INFO     ___FILE_ONLY___ -
+2024-11-26 15:07:19,785 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,786 INFO     ___FILE_ONLY___ storage.objects.get
+2024-11-26 15:07:19,786 INFO     ___FILE_ONLY___ 
+
+2024-11-26 15:07:19,786 INFO     ___FILE_ONLY___ name
+2024-11-26 15:07:19,786 INFO     ___FILE_ONLY___ :
+2024-11-26 15:07:19,786 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,786 INFO     ___FILE_ONLY___ projects/inspired-photon-441609-k7/roles/main_custom_role5
+2024-11-26 15:07:19,786 INFO     ___FILE_ONLY___ 
+
+2024-11-26 15:07:19,786 INFO     ___FILE_ONLY___ stage
+2024-11-26 15:07:19,787 INFO     ___FILE_ONLY___ :
+2024-11-26 15:07:19,787 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,787 INFO     ___FILE_ONLY___ ALPHA
+2024-11-26 15:07:19,787 INFO     ___FILE_ONLY___ 
+
+2024-11-26 15:07:19,787 INFO     ___FILE_ONLY___ title
+2024-11-26 15:07:19,787 INFO     ___FILE_ONLY___ :
+2024-11-26 15:07:19,787 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,787 INFO     ___FILE_ONLY___ Custom
+2024-11-26 15:07:19,787 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,787 INFO     ___FILE_ONLY___ role
+2024-11-26 15:07:19,788 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,788 INFO     ___FILE_ONLY___ for
+2024-11-26 15:07:19,788 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,788 INFO     ___FILE_ONLY___ needed
+2024-11-26 15:07:19,788 INFO     ___FILE_ONLY___  
+2024-11-26 15:07:19,788 INFO     ___FILE_ONLY___ services_5
+2024-11-26 15:07:19,788 INFO     ___FILE_ONLY___ 
+
+2024-11-26 15:07:19,788 DEBUG    root            SDK update checks are disabled.

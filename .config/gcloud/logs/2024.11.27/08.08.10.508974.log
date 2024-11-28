@@ -1,0 +1,112 @@
+2024-11-27 08:08:10,512 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2024-11-27 08:08:10,875 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'deploy']
+2024-11-27 08:08:10,909 DEBUG    root            Running [gcloud.functions.deploy] with arguments: [--entry-point: "gcs_trigger", --runtime: "python312", --set-env-vars: "OrderedDict([('PROJECT_ID', 'inspired-photon-441609-k7'), ('TOPIC_ID', 'gcs-trigger-topic')])", --source: "./pubsub_script", --trigger-event: "google.storage.object.finalize", --trigger-resource: "main-bucket-5505", NAME: "gcs-to-pubsub"]
+2024-11-27 08:08:11,073 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 08:08:11,182 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json HTTP/1.1" 404 None
+2024-11-27 08:08:11,185 INFO     ___FILE_ONLY___ As of this Cloud SDK release, new functions will be deployed as 2nd gen  functions by default. This is equivalent to currently deploying new  with the --gen2 flag. Existing 1st gen functions will not be impacted and will continue to deploy as 1st gen functions.
+You can disable this behavior by explicitly specifying the --no-gen2 flag or by setting the functions/gen2 config property to 'off'.
+To learn more about the differences between 1st gen and 2nd gen functions, visit:
+https://cloud.google.com/functions/docs/concepts/version-comparison
+
+2024-11-27 08:08:11,313 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 08:08:11,399 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json HTTP/1.1" 404 None
+2024-11-27 08:08:11,404 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 08:08:11,505 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/runtimes?alt=json HTTP/1.1" 200 None
+2024-11-27 08:08:11,532 INFO     root            Not using ignore file.
+2024-11-27 08:08:11,539 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 08:08:11,719 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "POST /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions:generateUploadUrl?alt=json HTTP/1.1" 200 None
+2024-11-27 08:08:11,726 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2024-11-27 08:08:11,850 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "PUT /gcf-v2-uploads-644941739395.us-central1.cloudfunctions.appspot.com/a908718f-9681-427b-9151-0181b544f23b.zip?GoogleAccessId=service-644941739395%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1732696691&Signature=NeaLpohfFWnFinSuYTFLxjFdRr4M4hkxurntlzDosmRRrB9ri%2BUUAdhEY04APP6fvXqi4UtYXmDnVT8vuDu13z%2BCpoqYITZ299paVl%2B2Yz0EkSnoEb7FTzgpYc1E1UqULXSkZK3cHWjeyc2R%2BAOvjZDC3sB4ga3rIXxciQd0O5rfn4EHLwYBZJvsg6m2JdJlkdukX4LfmVvvJxVPeU7t9AfzXC%2FH%2Bf0tcyOkED1UUSMqsBGnVMW8ab5z%2B8HR8%2B99td5ct9adfOtAHssymhxrm9Ro8MM2paKt6EapkPzRO7F1p7LtyVBjBnh2SqmDWkvpDLfeXmvfZszN2EquhGtWxQ%3D%3D HTTP/1.1" 200 0
+2024-11-27 08:08:11,940 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 08:08:12,125 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/run.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-27 08:08:12,128 INFO     root            Could not verify if service run.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-27 08:08:12,197 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 08:08:12,428 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/cloudbuild.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-27 08:08:12,431 INFO     root            Could not verify if service cloudbuild.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-27 08:08:12,498 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 08:08:12,722 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/artifactregistry.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-27 08:08:12,724 INFO     root            Could not verify if service artifactregistry.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-27 08:08:12,935 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2024-11-27 08:08:13,126 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/locations/us-central1/defaultServiceAccount?alt=json HTTP/1.1" 403 None
+2024-11-27 08:08:13,130 DEBUG    root            (gcloud.functions.deploy) ResponseError: status=[403], code=[Ok], message=[The caller does not have permission]
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/functions/v1/util.py", line 387, in CatchHTTPErrorRaiseHTTPExceptionFn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/util.py", line 86, in Run
+    return self._RunV2(args)
+           ^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/surface/functions/deploy.py", line 144, in _RunV2
+    return command_v2.Run(args, self.ReleaseTrack())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/v2/deploy/command.py", line 1310, in Run
+    service_account_util.ValidateDefaultBuildServiceAccountAndPromptWarning(
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/service_account_util.py", line 63, in ValidateDefaultBuildServiceAccountAndPromptWarning
+    GetDefaultBuildServiceAccount(project_id, region)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/service_account_util.py", line 32, in GetDefaultBuildServiceAccount
+    return client.projects_locations.GetDefaultServiceAccount(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/generated_clients/apis/cloudbuild/v1/cloudbuild_v1_client.py", line 2473, in GetDefaultServiceAccount
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://cloudbuild.googleapis.com/v1/projects/inspired-photon-441609-k7/locations/us-central1/defaultServiceAccount?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Wed, 27 Nov 2024 08:08:13 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'transfer-encoding': 'chunked', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "The caller does not have permission",
+    "status": "PERMISSION_DENIED"
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/backend.py", line 843, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/functions/v1/util.py", line 389, in CatchHTTPErrorRaiseHTTPExceptionFn
+    core_exceptions.reraise(
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/core/exceptions.py", line 149, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/snap/google-cloud-cli/289/lib/third_party/six/__init__.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/functions/v1/util.py", line 387, in CatchHTTPErrorRaiseHTTPExceptionFn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/util.py", line 86, in Run
+    return self._RunV2(args)
+           ^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/surface/functions/deploy.py", line 144, in _RunV2
+    return command_v2.Run(args, self.ReleaseTrack())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/v2/deploy/command.py", line 1310, in Run
+    service_account_util.ValidateDefaultBuildServiceAccountAndPromptWarning(
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/service_account_util.py", line 63, in ValidateDefaultBuildServiceAccountAndPromptWarning
+    GetDefaultBuildServiceAccount(project_id, region)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/service_account_util.py", line 32, in GetDefaultBuildServiceAccount
+    return client.projects_locations.GetDefaultServiceAccount(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/generated_clients/apis/cloudbuild/v1/cloudbuild_v1_client.py", line 2473, in GetDefaultServiceAccount
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+googlecloudsdk.calliope.exceptions.HttpException: ResponseError: status=[403], code=[Ok], message=[The caller does not have permission]
+2024-11-27 08:08:13,135 ERROR    root            (gcloud.functions.deploy) ResponseError: status=[403], code=[Ok], message=[The caller does not have permission]

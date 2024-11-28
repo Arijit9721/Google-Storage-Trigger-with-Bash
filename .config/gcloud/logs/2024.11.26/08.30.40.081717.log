@@ -1,0 +1,59 @@
+2024-11-26 08:30:40,087 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2024-11-26 08:30:40,091 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'roles']
+2024-11-26 08:30:40,149 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'roles', 'create']
+2024-11-26 08:30:40,153 DEBUG    root            Running [gcloud.iam.roles.create] with arguments: [--permissions: "storage.objects.get,storage.objects.create,pubsub.topics.publish,cloudfunctions.functions.invoke", --project: "inspired-photon-441609-k7", --title: "Custom role for needed services", ROLE_ID: "main_custom_role"]
+2024-11-26 08:30:40,216 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:40,637 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 08:30:40,724 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:41,226 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 08:30:41,308 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:41,688 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 08:30:41,770 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:42,135 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 08:30:42,200 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:42,644 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 08:30:42,721 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:43,182 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 08:30:43,264 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:43,622 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 08:30:43,704 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:44,087 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 08:30:44,161 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:44,654 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 08:30:44,730 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:45,108 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 08:30:45,189 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:45,495 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 08:30:45,513 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 08:30:45,619 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7/roles?alt=json HTTP/1.1" 403 None
+2024-11-26 08:30:45,629 DEBUG    root            (gcloud.iam.roles.create) [644941739395-compute@developer.gserviceaccount.com] does not have permission to access projects instance [inspired-photon-441609-k7] (or it may not exist): You don't have permission to create a role in projects/inspired-photon-441609-k7. This command is authenticated as 644941739395-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property.
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/backend.py", line 842, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/surface/iam/roles/create.py", line 103, in Run
+    result = client.organizations_roles.Create(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/generated_clients/apis/iam/v1/iam_v1_client.py", line 1126, in Create
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://iam.googleapis.com/v1/projects/inspired-photon-441609-k7/roles?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Tue, 26 Nov 2024 08:30:45 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'transfer-encoding': 'chunked', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "You don't have permission to create a role in projects/inspired-photon-441609-k7.",
+    "status": "PERMISSION_DENIED"
+  }
+}
+>
+2024-11-26 08:30:45,642 ERROR    root            (gcloud.iam.roles.create) [644941739395-compute@developer.gserviceaccount.com] does not have permission to access projects instance [inspired-photon-441609-k7] (or it may not exist): You don't have permission to create a role in projects/inspired-photon-441609-k7. This command is authenticated as 644941739395-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property.

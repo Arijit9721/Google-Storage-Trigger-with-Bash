@@ -1,0 +1,18 @@
+2024-11-25 17:07:38,486 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-11-25 17:07:38,691 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2024-11-25 17:07:38,694 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "project", VALUE: "inspired-photon-441609-k7"]
+2024-11-25 17:07:38,787 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-11-25 17:07:38,861 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7?alt=json HTTP/1.1" 403 None
+2024-11-25 17:07:38,866 DEBUG    root            Chosen display Format:default
+2024-11-25 17:07:38,895 WARNING  root            [644941739395-compute@developer.gserviceaccount.com] does not have permission to access projects instance [inspired-photon-441609-k7] (or it may not exist): Request had insufficient authentication scopes. This command is authenticated as 644941739395-compute@developer.gserviceaccount.com which is the active account specified by the [core/account] property.
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: googleapis.com
+  metadata:
+    method: google.cloudresourcemanager.v1.Projects.GetProject
+    service: cloudresourcemanager.googleapis.com
+  reason: ACCESS_TOKEN_SCOPE_INSUFFICIENT
+2024-11-25 17:07:47,910 INFO     ___FILE_ONLY___ Updated property [core/project].
+
+2024-11-25 17:07:47,911 DEBUG    root            Chosen display Format:default
+2024-11-25 17:07:47,911 INFO     root            Display format: "default"
+2024-11-25 17:07:47,912 DEBUG    root            SDK update checks are disabled.

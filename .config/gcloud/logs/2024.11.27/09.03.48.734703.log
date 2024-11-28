@@ -1,0 +1,16 @@
+2024-11-27 09:03:48,735 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2024-11-27 09:03:48,745 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'enable']
+2024-11-27 09:03:48,747 DEBUG    root            Running [gcloud.services.enable] with arguments: [SERVICE:1: "['run.googleapis.com']"]
+2024-11-27 09:03:48,846 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 09:03:49,144 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7/services/run.googleapis.com:enable?alt=json HTTP/1.1" 200 None
+2024-11-27 09:03:49,227 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 09:03:49,427 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p2-644941739395-e288cd6d-bf38-4565-b2a5-54b29ab5b8af?alt=json HTTP/1.1" 200 None
+2024-11-27 09:03:51,599 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 09:03:51,726 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p2-644941739395-e288cd6d-bf38-4565-b2a5-54b29ab5b8af?alt=json HTTP/1.1" 200 None
+2024-11-27 09:03:54,578 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 09:03:54,726 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p2-644941739395-e288cd6d-bf38-4565-b2a5-54b29ab5b8af?alt=json HTTP/1.1" 200 None
+2024-11-27 09:03:54,730 INFO     ___FILE_ONLY___ Operation "operations/acf.p2-644941739395-e288cd6d-bf38-4565-b2a5-54b29ab5b8af" finished successfully.
+
+2024-11-27 09:03:54,731 DEBUG    root            Chosen display Format:none
+2024-11-27 09:03:54,731 INFO     root            Display format: "none"
+2024-11-27 09:03:54,732 DEBUG    root            SDK update checks are disabled.

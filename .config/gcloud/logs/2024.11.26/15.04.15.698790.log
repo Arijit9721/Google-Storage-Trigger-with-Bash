@@ -1,0 +1,26 @@
+2024-11-26 15:04:15,709 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2024-11-26 15:04:15,712 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2024-11-26 15:04:15,984 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'create']
+2024-11-26 15:04:15,991 DEBUG    root            Running [gcloud.storage.buckets.create] with arguments: [--location: "us-central1", URL:1: "['main-bucket-5505']"]
+2024-11-26 15:04:15,991 DEBUG    root            (gcloud.storage.buckets.create) "gcloud storage buckets create" only accepts bucket URLs.
+Example: "gs://bucket"
+Received: "file://main-bucket-5505"
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/backend.py", line 843, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/surface/storage/buckets/create.py", line 158, in Run
+    errors_util.raise_error_if_not_bucket(args.command_path, url)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/storage/errors_util.py", line 57, in raise_error_if_not_bucket
+    _raise_error_for_wrong_resource_type(
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/storage/errors_util.py", line 48, in _raise_error_for_wrong_resource_type
+    raise errors.InvalidUrlError(
+googlecloudsdk.command_lib.storage.errors.InvalidUrlError: "gcloud storage buckets create" only accepts bucket URLs.
+Example: "gs://bucket"
+Received: "file://main-bucket-5505"
+2024-11-26 15:04:16,058 ERROR    root            (gcloud.storage.buckets.create) "gcloud storage buckets create" only accepts bucket URLs.
+Example: "gs://bucket"
+Received: "file://main-bucket-5505"

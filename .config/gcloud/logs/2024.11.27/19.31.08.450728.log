@@ -1,0 +1,486 @@
+2024-11-27 19:31:08,459 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2024-11-27 19:31:09,430 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'deploy']
+2024-11-27 19:31:09,517 DEBUG    root            Running [gcloud.functions.deploy] with arguments: [--entry-point: "gcs_trigger", --runtime: "python312", --set-env-vars: "OrderedDict([('PROJECT_ID', 'inspired-photon-441609-k7'), ('TOPIC_ID', 'gcs-trigger-topic'), ('SENDGRID_API_KEY', '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')])", --source: ".", --timeout: "300", --trigger-event: "google.storage.object.finalize", --trigger-resource: "main-bucket-5505", NAME: "gcs-to-pubsub"]
+2024-11-27 19:31:09,678 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:09,919 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:10,055 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:10,269 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:10,275 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:10,369 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/runtimes?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:10,402 INFO     root            Not using ignore file.
+2024-11-27 19:31:30,592 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:30,753 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "POST /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions:generateUploadUrl?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:30,835 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2024-11-27 19:31:31,384 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "PUT /gcf-v2-uploads-644941739395.us-central1.cloudfunctions.appspot.com/2d690ce5-d2fb-4269-a861-213969f2e2ff.zip?GoogleAccessId=service-644941739395%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1732737690&Signature=QBzHpfHj1PmGyOhVlwt2afCB0GjM5ow9swHYrQMp10XLxABGfGpTpTw1jLD5o5l%2BrxZjwqtR%2FHKTPSlwwTXPo%2BMn3TalPJubK6srSmcvetum0clU4xRTuWIpyTmZEFz7ZOMraDWt0jtlvmViBnLf8aheS6lGesB1c%2FGE85%2Bk2UnpwTPoXmWzOGspiM4YTe%2FOrERFHLVyzpc6lOO1W1rOH0oYdINhisQsu9Sl%2FeM5tp20XNsEJ%2FgezJwVk6NUaR6WWqEnAN4KMtBm9x7KDL1IRwHw8kd1UEcEm3LBp7SzdIKCK3aH0X0G0%2B6a0mcuNuO6E6kf4HKrN3G0Wtb1pBNosQ%3D%3D HTTP/1.1" 200 0
+2024-11-27 19:31:31,474 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 19:31:31,618 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/run.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-27 19:31:31,621 INFO     root            Could not verify if service run.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-27 19:31:31,689 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 19:31:31,828 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/cloudbuild.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-27 19:31:31,831 INFO     root            Could not verify if service cloudbuild.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-27 19:31:31,898 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 19:31:32,140 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/artifactregistry.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-27 19:31:32,143 INFO     root            Could not verify if service artifactregistry.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-27 19:31:32,369 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2024-11-27 19:31:32,498 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/locations/us-central1/defaultServiceAccount?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:32,636 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-11-27 19:31:32,714 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:32,849 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-11-27 19:31:33,035 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7:getIamPolicy?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:33,042 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:33,814 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "PATCH /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json&updateMask=build_config.entry_point%2Cbuild_config.runtime%2Cbuild_config.source%2Cevent_trigger%2Cservice_config.environment_variables%2Cservice_config.timeout_seconds HTTP/1.1" 200 None
+2024-11-27 19:31:33,818 INFO     ___FILE_ONLY___ Preparing function...
+2024-11-27 19:31:33,820 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:33,908 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:35,071 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:35,156 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:35,222 INFO     ___FILE_ONLY___ Updating function (may take a while)...
+2024-11-27 19:31:35,226 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:35,315 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:36,670 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:36,758 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:38,734 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:38,796 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:39,962 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:40,048 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:41,305 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:41,393 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:42,991 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:43,075 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:44,878 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:44,960 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:46,795 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:46,882 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:48,443 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:48,529 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:50,246 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:50,308 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:52,145 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:52,234 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:54,173 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:54,262 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:55,444 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:55,533 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:57,052 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:57,118 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:31:58,349 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:31:58,458 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:00,028 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:00,091 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:01,473 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:01,533 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:03,536 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:03,596 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:05,302 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:05,359 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:07,012 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:07,098 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:09,074 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:09,159 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:11,161 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:11,225 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:12,624 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:12,690 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:13,714 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:13,780 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:15,631 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:15,703 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:17,551 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:17,641 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:18,786 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:18,856 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:20,211 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:20,276 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:21,785 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:21,893 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:23,326 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:23,401 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:25,003 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:25,087 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:27,046 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:27,109 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:28,684 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:28,764 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:30,090 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:30,156 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:32,030 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:32,116 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:34,019 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:34,083 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:35,453 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:35,519 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:36,956 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:37,025 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:38,264 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:38,327 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:39,991 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:40,101 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:41,428 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:41,525 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:43,316 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:43,374 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:45,244 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:45,303 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:46,577 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:46,659 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:47,820 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:47,907 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/operations/operation-1732735893132-627ea036655eb-4a6cd0d7-6d863621?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:47,931 INFO     ___FILE_ONLY___   [INFO] A new revision will be deployed serving with 100% traffic.
+
+2024-11-27 19:32:47,934 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-27 19:32:48,176 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json HTTP/1.1" 200 None
+2024-11-27 19:32:48,181 INFO     ___FILE_ONLY___ You can view your function in the Cloud Console here: https://console.cloud.google.com/functions/details/us-central1/gcs-to-pubsub?project=inspired-photon-441609-k7
+
+
+2024-11-27 19:32:48,181 DEBUG    root            Chosen display Format:default
+2024-11-27 19:32:48,183 INFO     root            Display format: "default"
+2024-11-27 19:32:48,207 INFO     ___FILE_ONLY___ buildConfig
+2024-11-27 19:32:48,207 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,207 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,208 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,208 INFO     ___FILE_ONLY___ automaticUpdatePolicy
+2024-11-27 19:32:48,208 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,208 INFO     ___FILE_ONLY___  {
+2024-11-27 19:32:48,208 INFO     ___FILE_ONLY___ }
+2024-11-27 19:32:48,208 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,208 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,208 INFO     ___FILE_ONLY___ build
+2024-11-27 19:32:48,209 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,209 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,209 INFO     ___FILE_ONLY___ projects/644941739395/locations/us-central1/builds/4a4e438c-c5d0-45ef-8bdb-d0f6c833c45a
+2024-11-27 19:32:48,209 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,209 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,209 INFO     ___FILE_ONLY___ dockerRegistry
+2024-11-27 19:32:48,209 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,209 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,209 INFO     ___FILE_ONLY___ ARTIFACT_REGISTRY
+2024-11-27 19:32:48,209 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,210 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,210 INFO     ___FILE_ONLY___ dockerRepository
+2024-11-27 19:32:48,210 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,210 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,210 INFO     ___FILE_ONLY___ projects/inspired-photon-441609-k7/locations/us-central1/repositories/gcf-artifacts
+2024-11-27 19:32:48,210 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,210 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,210 INFO     ___FILE_ONLY___ entryPoint
+2024-11-27 19:32:48,210 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,210 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,210 INFO     ___FILE_ONLY___ gcs_trigger
+2024-11-27 19:32:48,211 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,211 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,211 INFO     ___FILE_ONLY___ runtime
+2024-11-27 19:32:48,211 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,211 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,211 INFO     ___FILE_ONLY___ python312
+2024-11-27 19:32:48,211 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,211 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,211 INFO     ___FILE_ONLY___ serviceAccount
+2024-11-27 19:32:48,211 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,211 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,212 INFO     ___FILE_ONLY___ projects/inspired-photon-441609-k7/serviceAccounts/644941739395-compute@developer.gserviceaccount.com
+2024-11-27 19:32:48,212 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,212 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,212 INFO     ___FILE_ONLY___ source
+2024-11-27 19:32:48,212 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,212 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,212 INFO     ___FILE_ONLY___     
+2024-11-27 19:32:48,212 INFO     ___FILE_ONLY___ storageSource
+2024-11-27 19:32:48,212 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,212 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,212 INFO     ___FILE_ONLY___       
+2024-11-27 19:32:48,213 INFO     ___FILE_ONLY___ bucket
+2024-11-27 19:32:48,213 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,213 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,213 INFO     ___FILE_ONLY___ gcf-v2-sources-644941739395-us-central1
+2024-11-27 19:32:48,213 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,213 INFO     ___FILE_ONLY___       
+2024-11-27 19:32:48,213 INFO     ___FILE_ONLY___ generation
+2024-11-27 19:32:48,214 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,214 INFO     ___FILE_ONLY___  '
+2024-11-27 19:32:48,214 INFO     ___FILE_ONLY___ 1732735893722530
+2024-11-27 19:32:48,214 INFO     ___FILE_ONLY___ '
+2024-11-27 19:32:48,214 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,215 INFO     ___FILE_ONLY___       
+2024-11-27 19:32:48,215 INFO     ___FILE_ONLY___ object
+2024-11-27 19:32:48,215 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,215 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,215 INFO     ___FILE_ONLY___ gcs-to-pubsub/function-source.zip
+2024-11-27 19:32:48,215 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,215 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,215 INFO     ___FILE_ONLY___ sourceProvenance
+2024-11-27 19:32:48,215 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,215 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___     
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___ resolvedStorageSource
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___       
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___ bucket
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___ gcf-v2-sources-644941739395-us-central1
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___       
+2024-11-27 19:32:48,216 INFO     ___FILE_ONLY___ generation
+2024-11-27 19:32:48,217 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,217 INFO     ___FILE_ONLY___  '
+2024-11-27 19:32:48,217 INFO     ___FILE_ONLY___ 1732735893722530
+2024-11-27 19:32:48,217 INFO     ___FILE_ONLY___ '
+2024-11-27 19:32:48,217 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,217 INFO     ___FILE_ONLY___       
+2024-11-27 19:32:48,217 INFO     ___FILE_ONLY___ object
+2024-11-27 19:32:48,217 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,217 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,217 INFO     ___FILE_ONLY___ gcs-to-pubsub/function-source.zip
+2024-11-27 19:32:48,217 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,218 INFO     ___FILE_ONLY___ createTime
+2024-11-27 19:32:48,218 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,218 INFO     ___FILE_ONLY___  '
+2024-11-27 19:32:48,219 INFO     ___FILE_ONLY___ 2024-11-27T18:31:07.916277832Z
+2024-11-27 19:32:48,219 INFO     ___FILE_ONLY___ '
+2024-11-27 19:32:48,219 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,219 INFO     ___FILE_ONLY___ environment
+2024-11-27 19:32:48,219 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,219 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,219 INFO     ___FILE_ONLY___ GEN_2
+2024-11-27 19:32:48,219 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,219 INFO     ___FILE_ONLY___ eventTrigger
+2024-11-27 19:32:48,219 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___ eventFilters
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___ -
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___ attribute
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,220 INFO     ___FILE_ONLY___ bucket
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___     
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___ value
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___ main-bucket-5505
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___ eventType
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,221 INFO     ___FILE_ONLY___ google.cloud.storage.object.v1.finalized
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___ pubsubTopic
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___ projects/inspired-photon-441609-k7/topics/eventarc-us-central1-gcs-to-pubsub-351697-922
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___ retryPolicy
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,222 INFO     ___FILE_ONLY___ RETRY_POLICY_DO_NOT_RETRY
+2024-11-27 19:32:48,223 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,223 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,223 INFO     ___FILE_ONLY___ serviceAccountEmail
+2024-11-27 19:32:48,223 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,223 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,223 INFO     ___FILE_ONLY___ 644941739395-compute@developer.gserviceaccount.com
+2024-11-27 19:32:48,223 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,223 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,224 INFO     ___FILE_ONLY___ trigger
+2024-11-27 19:32:48,224 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,224 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,224 INFO     ___FILE_ONLY___ projects/inspired-photon-441609-k7/locations/us-central1/triggers/gcs-to-pubsub-351697
+2024-11-27 19:32:48,224 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,224 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,224 INFO     ___FILE_ONLY___ triggerRegion
+2024-11-27 19:32:48,224 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,224 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,224 INFO     ___FILE_ONLY___ us-central1
+2024-11-27 19:32:48,224 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,225 INFO     ___FILE_ONLY___ labels
+2024-11-27 19:32:48,225 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,225 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,225 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,225 INFO     ___FILE_ONLY___ deployment-tool
+2024-11-27 19:32:48,225 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,225 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,225 INFO     ___FILE_ONLY___ cli-gcloud
+2024-11-27 19:32:48,225 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,225 INFO     ___FILE_ONLY___ name
+2024-11-27 19:32:48,226 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,226 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,226 INFO     ___FILE_ONLY___ projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub
+2024-11-27 19:32:48,226 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,226 INFO     ___FILE_ONLY___ serviceConfig
+2024-11-27 19:32:48,226 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,226 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,226 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,226 INFO     ___FILE_ONLY___ allTrafficOnLatestRevision
+2024-11-27 19:32:48,226 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___ true
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___ availableCpu
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___  '
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___ 0.1666
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___ '
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___ availableMemory
+2024-11-27 19:32:48,227 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,228 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,228 INFO     ___FILE_ONLY___ 256M
+2024-11-27 19:32:48,228 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,228 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,228 INFO     ___FILE_ONLY___ environmentVariables
+2024-11-27 19:32:48,228 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,228 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,229 INFO     ___FILE_ONLY___     
+2024-11-27 19:32:48,229 INFO     ___FILE_ONLY___ LOG_EXECUTION_ID
+2024-11-27 19:32:48,229 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,229 INFO     ___FILE_ONLY___  '
+2024-11-27 19:32:48,229 INFO     ___FILE_ONLY___ true
+2024-11-27 19:32:48,229 INFO     ___FILE_ONLY___ '
+2024-11-27 19:32:48,229 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,229 INFO     ___FILE_ONLY___     
+2024-11-27 19:32:48,229 INFO     ___FILE_ONLY___ PROJECT_ID
+2024-11-27 19:32:48,229 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,230 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,230 INFO     ___FILE_ONLY___ inspired-photon-441609-k7
+2024-11-27 19:32:48,230 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,230 INFO     ___FILE_ONLY___     
+2024-11-27 19:32:48,230 INFO     ___FILE_ONLY___ SENDGRID_API_KEY
+2024-11-27 19:32:48,230 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,230 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,230 INFO     ___FILE_ONLY___ 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
+2024-11-27 19:32:48,230 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,230 INFO     ___FILE_ONLY___     
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___ TOPIC_ID
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___ gcs-trigger-topic
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___ ingressSettings
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___ ALLOW_ALL
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,231 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___ maxInstanceCount
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___ 100
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___ maxInstanceRequestConcurrency
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___ 1
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,232 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___ revision
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___ gcs-to-pubsub-00005-boh
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___ service
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___ projects/inspired-photon-441609-k7/locations/us-central1/services/gcs-to-pubsub
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,233 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___ serviceAccountEmail
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___ 644941739395-compute@developer.gserviceaccount.com
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___ timeoutSeconds
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___ 300
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,234 INFO     ___FILE_ONLY___   
+2024-11-27 19:32:48,235 INFO     ___FILE_ONLY___ uri
+2024-11-27 19:32:48,235 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,235 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,235 INFO     ___FILE_ONLY___ https://gcs-to-pubsub-m2x2uxrdfq-uc.a.run.app
+2024-11-27 19:32:48,235 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,235 INFO     ___FILE_ONLY___ state
+2024-11-27 19:32:48,235 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,235 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,235 INFO     ___FILE_ONLY___ ACTIVE
+2024-11-27 19:32:48,235 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,236 INFO     ___FILE_ONLY___ updateTime
+2024-11-27 19:32:48,236 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,236 INFO     ___FILE_ONLY___  '
+2024-11-27 19:32:48,236 INFO     ___FILE_ONLY___ 2024-11-27T19:32:46.821624372Z
+2024-11-27 19:32:48,236 INFO     ___FILE_ONLY___ '
+2024-11-27 19:32:48,236 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,236 INFO     ___FILE_ONLY___ url
+2024-11-27 19:32:48,236 INFO     ___FILE_ONLY___ :
+2024-11-27 19:32:48,236 INFO     ___FILE_ONLY___  
+2024-11-27 19:32:48,236 INFO     ___FILE_ONLY___ https://us-central1-inspired-photon-441609-k7.cloudfunctions.net/gcs-to-pubsub
+2024-11-27 19:32:48,236 INFO     ___FILE_ONLY___ 
+
+2024-11-27 19:32:48,237 DEBUG    root            SDK update checks are disabled.

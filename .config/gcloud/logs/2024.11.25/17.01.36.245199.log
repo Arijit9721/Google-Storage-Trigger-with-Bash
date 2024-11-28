@@ -1,0 +1,124 @@
+2024-11-25 17:01:36,249 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2024-11-25 17:01:36,253 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'roles']
+2024-11-25 17:01:36,301 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'roles', 'create']
+2024-11-25 17:01:36,303 DEBUG    root            (gcloud) The project property must be set to a valid project ID, not the project name [200~inspired-photon-441609-k7]
+To set your project, run:
+
+  $ gcloud config set project PROJECT_ID
+
+or to unset it, run:
+
+  $ gcloud config unset project
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/cli.py", line 967, in Execute
+    args = self.__parser.parse_args(_ApplyFlagsFile(argv))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 769, in parse_args
+    namespace, unknown_args, _ = self._ParseKnownArgs(args, namespace)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 560, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 732, in parse_known_args
+    namespace, unknown_args, error_context = self._ParseKnownArgs(
+                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 560, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1735, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1923, in _parse_known_args
+    positionals_end_index = consume_positionals(start_index)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1900, in consume_positionals
+    take_action(action, args)
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1809, in take_action
+    action(self, namespace, argument_values, option_string)
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 1309, in __call__
+    super(CommandGroupAction, self).__call__(
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1111, in __call__
+    namespace, arg_strings = parser.parse_known_args(arg_strings, namespace)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 732, in parse_known_args
+    namespace, unknown_args, error_context = self._ParseKnownArgs(
+                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 560, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1735, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1923, in _parse_known_args
+    positionals_end_index = consume_positionals(start_index)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1900, in consume_positionals
+    take_action(action, args)
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1809, in take_action
+    action(self, namespace, argument_values, option_string)
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 1309, in __call__
+    super(CommandGroupAction, self).__call__(
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1111, in __call__
+    namespace, arg_strings = parser.parse_known_args(arg_strings, namespace)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 732, in parse_known_args
+    namespace, unknown_args, error_context = self._ParseKnownArgs(
+                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 560, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1735, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1923, in _parse_known_args
+    positionals_end_index = consume_positionals(start_index)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1900, in consume_positionals
+    take_action(action, args)
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1809, in take_action
+    action(self, namespace, argument_values, option_string)
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 1309, in __call__
+    super(CommandGroupAction, self).__call__(
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1111, in __call__
+    namespace, arg_strings = parser.parse_known_args(arg_strings, namespace)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 732, in parse_known_args
+    namespace, unknown_args, error_context = self._ParseKnownArgs(
+                                             ^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/parser_extensions.py", line 560, in _ParseKnownArgs
+    namespace, unknown_args = parser.parse_known_args(args, namespace)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1735, in parse_known_args
+    namespace, args = self._parse_known_args(args, namespace)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1941, in _parse_known_args
+    start_index = consume_optional(start_index)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1881, in consume_optional
+    take_action(action, args, option_string)
+  File "/snap/google-cloud-cli/275/lib/third_party/argparse/__init__.py", line 1809, in take_action
+    action(self, namespace, argument_values, option_string)
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/calliope/actions.py", line 141, in __call__
+    properties.VALUES.SetInvocationValue(prop, values, option_string)
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/core/properties.py", line 688, in SetInvocationValue
+    prop.Validate(value)
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/core/properties.py", line 4168, in Validate
+    self.__validator(value)
+  File "/snap/google-cloud-cli/275/lib/googlecloudsdk/core/properties.py", line 2417, in ProjectValidator
+    raise InvalidProjectError(
+googlecloudsdk.core.properties.InvalidProjectError: The project property must be set to a valid project ID, not the project name [200~inspired-photon-441609-k7]
+To set your project, run:
+
+  $ gcloud config set project PROJECT_ID
+
+or to unset it, run:
+
+  $ gcloud config unset project
+2024-11-25 17:01:36,319 ERROR    root            (gcloud) The project property must be set to a valid project ID, not the project name [200~inspired-photon-441609-k7]
+To set your project, run:
+
+  $ gcloud config set project PROJECT_ID
+
+or to unset it, run:
+
+  $ gcloud config unset project

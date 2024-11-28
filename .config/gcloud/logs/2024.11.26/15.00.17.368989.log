@@ -1,0 +1,12 @@
+2024-11-26 15:00:17,618 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2024-11-26 15:00:17,626 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2024-11-26 15:00:19,390 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'create']
+2024-11-26 15:00:19,397 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'storage']
+2024-11-26 15:00:19,399 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'storage', 'buckets']
+2024-11-26 15:00:19,401 DEBUG    root            Loaded Command Group: ['gcloud', 'alpha', 'storage', 'buckets', 'create']
+2024-11-26 15:00:19,406 DEBUG    root            No implementation for release track [BETA] for element: [/snap/google-cloud-cli/289/lib/surface/storage]
+2024-11-26 15:00:19,407 DEBUG    root            No implementation for release track [PREVIEW] for element: [/snap/google-cloud-cli/289/lib/surface/storage]
+2024-11-26 15:00:19,407 ERROR    root            (gcloud.storage.buckets.create) unrecognized arguments: --service-account=trigger-account@inspired-photon-441609-k7.iam.gserviceaccount.com (did you mean '--impersonate-service-account'?) 
+
+To search the help text of gcloud commands, run:
+  gcloud help -- SEARCH_TERMS

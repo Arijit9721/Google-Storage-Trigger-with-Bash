@@ -1,0 +1,10 @@
+2024-11-28 09:42:56,754 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-11-28 09:42:56,767 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'describe']
+2024-11-28 09:42:56,770 DEBUG    root            Running [gcloud.projects.describe] with arguments: [--format: "value(projectNumber)", PROJECT_ID_OR_NUMBER: "inspired-photon-441609-k7"]
+2024-11-28 09:42:56,940 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-11-28 09:42:57,115 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7?alt=json HTTP/1.1" 200 None
+2024-11-28 09:42:57,118 DEBUG    root            Chosen display Format:default value(projectNumber)
+2024-11-28 09:42:57,119 INFO     root            Display format: "default value(projectNumber)"
+2024-11-28 09:42:57,146 INFO     ___FILE_ONLY___ 644941739395
+
+2024-11-28 09:42:57,146 DEBUG    root            SDK update checks are disabled.

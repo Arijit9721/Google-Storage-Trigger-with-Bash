@@ -1,0 +1,59 @@
+2024-11-26 17:25:51,283 DEBUG    root            Loaded Command Group: ['gcloud', 'iam']
+2024-11-26 17:25:51,286 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'roles']
+2024-11-26 17:25:51,315 DEBUG    root            Loaded Command Group: ['gcloud', 'iam', 'roles', 'create']
+2024-11-26 17:25:51,320 DEBUG    root            Running [gcloud.iam.roles.create] with arguments: [--permissions: "storage.objects.get,storage.objects.create,storage.buckets.create,pubsub.topics.create,pubsub.topics.publish,cloudfunctions.functions.create,cloudfunctions.functions.invoke", --project: "inspired-photon-441609-k7", --title: "Custom role for needed services_8", ROLE_ID: "main_custom_role8"]
+2024-11-26 17:25:51,512 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:51,977 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 17:25:52,058 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:52,544 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 17:25:52,622 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:53,083 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 17:25:53,167 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:53,667 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 17:25:53,738 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:54,257 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 17:25:54,330 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:54,785 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 17:25:54,861 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:55,221 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 17:25:55,291 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:55,782 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 17:25:55,855 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:56,275 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 17:25:56,359 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:56,805 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 17:25:56,884 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:57,391 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/permissions:queryTestablePermissions?alt=json HTTP/1.1" 200 None
+2024-11-26 17:25:57,411 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): iam.googleapis.com:443
+2024-11-26 17:25:57,632 DEBUG    urllib3.connectionpool https://iam.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7/roles?alt=json HTTP/1.1" 400 None
+2024-11-26 17:25:57,637 DEBUG    root            (gcloud.iam.roles.create) FAILED_PRECONDITION: You can't create a role with role_id (main_custom_role8) where there is an existing role with that role_id in a deleted state.
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/backend.py", line 843, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/surface/iam/roles/create.py", line 103, in Run
+    result = client.organizations_roles.Create(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/generated_clients/apis/iam/v1/iam_v1_client.py", line 1126, in Create
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://iam.googleapis.com/v1/projects/inspired-photon-441609-k7/roles?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Tue, 26 Nov 2024 17:25:57 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "You can't create a role with role_id (main_custom_role8) where there is an existing role with that role_id in a deleted state.",
+    "status": "FAILED_PRECONDITION"
+  }
+}
+>
+2024-11-26 17:25:57,660 ERROR    root            (gcloud.iam.roles.create) FAILED_PRECONDITION: You can't create a role with role_id (main_custom_role8) where there is an existing role with that role_id in a deleted state.

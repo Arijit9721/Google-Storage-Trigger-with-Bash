@@ -1,0 +1,46 @@
+2024-11-24 14:50:20,845 DEBUG    root            Running [gcloud] with arguments: [-v: "None"]
+2024-11-24 14:50:20,848 DEBUG    root            Loaded Command Group: ['gcloud', 'version']
+2024-11-24 14:50:20,850 DEBUG    root            Running [gcloud.version] with arguments: []
+2024-11-24 14:50:20,892 DEBUG    root            Chosen display Format:flattened[no-pad,separator=" "]
+2024-11-24 14:50:20,892 INFO     root            Display format: "flattened[no-pad,separator=" "]"
+2024-11-24 14:50:20,927 INFO     ___FILE_ONLY___ Google Cloud SDK
+2024-11-24 14:50:20,927 INFO     ___FILE_ONLY___  
+2024-11-24 14:50:20,927 INFO     ___FILE_ONLY___ 495.0.0
+
+2024-11-24 14:50:20,927 INFO     ___FILE_ONLY___ alpha
+2024-11-24 14:50:20,927 INFO     ___FILE_ONLY___  
+2024-11-24 14:50:20,927 INFO     ___FILE_ONLY___ 2024.09.27
+
+2024-11-24 14:50:20,927 INFO     ___FILE_ONLY___ beta
+2024-11-24 14:50:20,927 INFO     ___FILE_ONLY___  
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___ 2024.09.27
+
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___ bq
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___  
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___ 2.1.8
+
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___ bundled-python3-unix
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___  
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___ 3.11.9
+
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___ core
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___  
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___ 2024.09.27
+
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___ gcloud-crc32c
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___  
+2024-11-24 14:50:20,928 INFO     ___FILE_ONLY___ 1.0.0
+
+2024-11-24 14:50:20,929 INFO     ___FILE_ONLY___ gsutil
+2024-11-24 14:50:20,929 INFO     ___FILE_ONLY___  
+2024-11-24 14:50:20,929 INFO     ___FILE_ONLY___ 5.30
+
+2024-11-24 14:50:20,929 INFO     ___FILE_ONLY___ minikube
+2024-11-24 14:50:20,929 INFO     ___FILE_ONLY___  
+2024-11-24 14:50:20,929 INFO     ___FILE_ONLY___ 1.34.0
+
+2024-11-24 14:50:20,929 INFO     ___FILE_ONLY___ skaffold
+2024-11-24 14:50:20,929 INFO     ___FILE_ONLY___  
+2024-11-24 14:50:20,929 INFO     ___FILE_ONLY___ 2.13.1
+
+2024-11-24 14:50:20,934 DEBUG    root            SDK update checks are disabled.

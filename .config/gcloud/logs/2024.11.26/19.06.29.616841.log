@@ -1,0 +1,14 @@
+2024-11-26 19:06:29,618 DEBUG    root            Loaded Command Group: ['gcloud', 'auth']
+2024-11-26 19:06:29,622 DEBUG    root            Loaded Command Group: ['gcloud', 'auth', 'activate_service_account']
+2024-11-26 19:06:29,624 DEBUG    root            Running [gcloud.auth.activate-service-account] with arguments: [--key-file: "/home/Arijit/gcs-key.json"]
+2024-11-26 19:06:29,713 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-11-26 19:06:29,715 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-11-26 19:06:29,780 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-11-26 19:06:29,784 DEBUG    google.auth.transport.requests Making request: POST https://oauth2.googleapis.com/token
+2024-11-26 19:06:29,785 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): oauth2.googleapis.com:443
+2024-11-26 19:06:29,839 DEBUG    urllib3.connectionpool https://oauth2.googleapis.com:443 "POST /token HTTP/1.1" 200 None
+2024-11-26 19:06:29,862 INFO     ___FILE_ONLY___ Activated service account credentials for: [trigger-account@inspired-photon-441609-k7.iam.gserviceaccount.com]
+
+2024-11-26 19:06:29,863 DEBUG    root            Chosen display Format:none
+2024-11-26 19:06:29,863 INFO     root            Display format: "none"
+2024-11-26 19:06:29,864 DEBUG    root            SDK update checks are disabled.

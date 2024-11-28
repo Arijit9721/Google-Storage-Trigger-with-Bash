@@ -1,0 +1,11 @@
+2024-11-26 17:39:41,057 DEBUG    root            Loaded Command Group: ['gcloud', 'storage']
+2024-11-26 17:39:41,059 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets']
+2024-11-26 17:39:41,324 DEBUG    root            Loaded Command Group: ['gcloud', 'storage', 'buckets', 'create']
+2024-11-26 17:39:41,331 DEBUG    root            Running [gcloud.storage.buckets.create] with arguments: [--location: "us-central1", URL:1: "['gs://main-bucket-5505']"]
+2024-11-26 17:39:41,331 INFO     ___FILE_ONLY___ Creating gs://main-bucket-5505/...
+
+2024-11-26 17:39:41,470 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2024-11-26 17:39:42,214 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "POST /storage/v1/b?alt=json&enableObjectRetention=False&project=inspired-photon-441609-k7&projection=noAcl HTTP/1.1" 200 763
+2024-11-26 17:39:42,218 DEBUG    root            Chosen display Format:default
+2024-11-26 17:39:42,219 INFO     root            Display format: "default"
+2024-11-26 17:39:42,219 DEBUG    root            SDK update checks are disabled.

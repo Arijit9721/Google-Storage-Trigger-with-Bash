@@ -1,0 +1,194 @@
+2024-11-26 19:22:09,451 DEBUG    root            Loaded Command Group: ['gcloud', 'functions']
+2024-11-26 19:22:09,858 DEBUG    root            Loaded Command Group: ['gcloud', 'functions', 'deploy']
+2024-11-26 19:22:09,899 DEBUG    root            Running [gcloud.functions.deploy] with arguments: [--entry-point: "gcs_trigger", --runtime: "python312", --set-env-vars: "OrderedDict([('PROJECT_ID', 'inspired-photon-441609-k7'), ('TOPIC_ID', 'gcs-trigger-topic')])", --source: "./pubsub_script", --trigger-event: "google.storage.object.finalize", --trigger-resource: "main-bucket-5505", NAME: "gcs-to-pubsub"]
+2024-11-26 19:22:10,077 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-26 19:22:10,182 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json HTTP/1.1" 404 None
+2024-11-26 19:22:10,185 INFO     ___FILE_ONLY___ As of this Cloud SDK release, new functions will be deployed as 2nd gen  functions by default. This is equivalent to currently deploying new  with the --gen2 flag. Existing 1st gen functions will not be impacted and will continue to deploy as 1st gen functions.
+You can disable this behavior by explicitly specifying the --no-gen2 flag or by setting the functions/gen2 config property to 'off'.
+To learn more about the differences between 1st gen and 2nd gen functions, visit:
+https://cloud.google.com/functions/docs/concepts/version-comparison
+
+2024-11-26 19:22:10,345 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-26 19:22:10,451 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions/gcs-to-pubsub?alt=json HTTP/1.1" 404 None
+2024-11-26 19:22:10,456 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-26 19:22:10,537 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "GET /v2/projects/inspired-photon-441609-k7/locations/us-central1/runtimes?alt=json HTTP/1.1" 200 None
+2024-11-26 19:22:10,566 INFO     root            Not using ignore file.
+2024-11-26 19:22:10,575 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudfunctions.googleapis.com:443
+2024-11-26 19:22:11,286 DEBUG    urllib3.connectionpool https://cloudfunctions.googleapis.com:443 "POST /v2/projects/inspired-photon-441609-k7/locations/us-central1/functions:generateUploadUrl?alt=json HTTP/1.1" 200 None
+2024-11-26 19:22:11,296 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): storage.googleapis.com:443
+2024-11-26 19:22:11,419 DEBUG    urllib3.connectionpool https://storage.googleapis.com:443 "PUT /gcf-v2-uploads-644941739395.us-central1.cloudfunctions.appspot.com/62fd1aac-48d0-45b6-beaa-ccdd0b9bfdc1.zip?GoogleAccessId=service-644941739395%40gcf-admin-robot.iam.gserviceaccount.com&Expires=1732650731&Signature=Z%2BLVXN0f%2FF3c4vJTMv4rL2rimnFgZTMhxEIlMAyJ8eKNmQc1rM892bT2slJErbPAf%2FcN4Ug1elCCYlTE6lFCbdQIAfZam6vj7NejwgU1Pq0QWwE1YP9VX8%2FARKfHQwAV9H548IQbMoyg5TyJe6SfD27CCKwQOxxsK2%2FcgExIWCBt1VJ1O7L6qiZVBqauVAx1iHld69dhVBwuSbffCN5ATn%2FbZR2IYstZUdJRLjMO5swoBvtFdCXLhKg7pOGXYnT4dp%2Bk6rZvY8w1hhs3F3Rc3VMy6j%2Fe1jCM49%2FbgWKOPo%2FUmNxriT9mCZ028yveiMwxp%2BZy8dFHCPsKjYfhlOhtGA%3D%3D HTTP/1.1" 200 0
+2024-11-26 19:22:11,550 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-26 19:22:11,728 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/run.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-26 19:22:11,731 INFO     root            Could not verify if service run.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-26 19:22:11,802 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-26 19:22:12,021 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/cloudbuild.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-26 19:22:12,024 INFO     root            Could not verify if service cloudbuild.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-26 19:22:12,093 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-26 19:22:12,226 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/services/artifactregistry.googleapis.com?alt=json HTTP/1.1" 403 None
+2024-11-26 19:22:12,228 INFO     root            Could not verify if service artifactregistry.googleapis.com is enabled: missing permission 'serviceusage.services.get'.
+2024-11-26 19:22:12,587 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudbuild.googleapis.com:443
+2024-11-26 19:22:12,652 DEBUG    urllib3.connectionpool https://cloudbuild.googleapis.com:443 "GET /v1/projects/inspired-photon-441609-k7/locations/us-central1/defaultServiceAccount?alt=json HTTP/1.1" 403 None
+2024-11-26 19:22:24,364 INFO     ___FILE_ONLY___ Enabling service [cloudbuild.googleapis.com] on project [inspired-photon-441609-k7]...
+
+2024-11-26 19:22:24,431 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-26 19:22:24,723 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7/services/cloudbuild.googleapis.com:enable?alt=json HTTP/1.1" 403 None
+2024-11-26 19:22:24,727 DEBUG    root            Chosen display Format:default
+2024-11-26 19:22:24,825 DEBUG    root            Chosen display Format:default
+2024-11-26 19:22:24,748 DEBUG    root            (gcloud.functions.deploy) PERMISSION_DENIED: Permission denied to enable service [cloudbuild.googleapis.com]
+Help Token: AYJSUtkOYDo0mUu0FijQ-0ie6HZUXqHcB-Fzk8DkADrtgT4Q16g31J8Zua2j52bM1RzwB4ENABhSDfR188VhFl4oKohEVtpqLOH8QAK_wGJyTaqN. This command is authenticated as trigger-account@inspired-photon-441609-k7.iam.gserviceaccount.com which is the active account specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=110002&service=serviceusage.googleapis.com&permission=serviceusage.services.enable&resource=inspired-photon-441609-k7
+    type: googleapis.com
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com
+  metadata:
+    permission: serviceusage.services.enable
+    resource: inspired-photon-441609-k7
+    service: serviceusage.googleapis.com
+  reason: AUTH_PERMISSION_DENIED
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/services/serviceusage.py", line 666, in EnableApiCall
+    return client.services.Enable(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/generated_clients/apis/serviceusage/v1/serviceusage_v1_client.py", line 263, in Enable
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpForbiddenError: HttpError accessing <https://serviceusage.googleapis.com/v1/projects/inspired-photon-441609-k7/services/cloudbuild.googleapis.com:enable?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Tue, 26 Nov 2024 19:22:24 GMT', 'server': 'ESF', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'transfer-encoding': 'chunked', 'status': 403}>, content <{
+  "error": {
+    "code": 403,
+    "message": "Permission denied to enable service [cloudbuild.googleapis.com]\nHelp Token: AYJSUtkOYDo0mUu0FijQ-0ie6HZUXqHcB-Fzk8DkADrtgT4Q16g31J8Zua2j52bM1RzwB4ENABhSDfR188VhFl4oKohEVtpqLOH8QAK_wGJyTaqN",
+    "status": "PERMISSION_DENIED",
+    "details": [
+      {
+        "@type": "type.googleapis.com/google.rpc.PreconditionFailure",
+        "violations": [
+          {
+            "type": "googleapis.com",
+            "subject": "?error_code=110002&service=serviceusage.googleapis.com&permission=serviceusage.services.enable&resource=inspired-photon-441609-k7"
+          }
+        ]
+      },
+      {
+        "@type": "type.googleapis.com/google.rpc.ErrorInfo",
+        "reason": "AUTH_PERMISSION_DENIED",
+        "domain": "serviceusage.googleapis.com",
+        "metadata": {
+          "service": "serviceusage.googleapis.com",
+          "permission": "serviceusage.services.enable",
+          "resource": "inspired-photon-441609-k7"
+        }
+      }
+    ]
+  }
+}
+>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/backend.py", line 843, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/functions/v1/util.py", line 387, in CatchHTTPErrorRaiseHTTPExceptionFn
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/util.py", line 86, in Run
+    return self._RunV2(args)
+           ^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/surface/functions/deploy.py", line 144, in _RunV2
+    return command_v2.Run(args, self.ReleaseTrack())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/v2/deploy/command.py", line 1310, in Run
+    service_account_util.ValidateDefaultBuildServiceAccountAndPromptWarning(
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/service_account_util.py", line 63, in ValidateDefaultBuildServiceAccountAndPromptWarning
+    GetDefaultBuildServiceAccount(project_id, region)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/functions/service_account_util.py", line 32, in GetDefaultBuildServiceAccount
+    return client.projects_locations.GetDefaultServiceAccount(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/generated_clients/apis/cloudbuild/v1/cloudbuild_v1_client.py", line 2473, in GetDefaultServiceAccount
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 744, in _RunMethod
+    http_response = http_wrapper.MakeRequest(
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/http_wrapper.py", line 359, in MakeRequest
+    retry_func(ExceptionRetryArgs(http, http_request, e, retry,
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/http_wrapper.py", line 304, in HandleExceptionsAndRebuildHttpConnections
+    raise retry_args.exc
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/http_wrapper.py", line 348, in MakeRequest
+    return _MakeRequestNoRetry(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/http_wrapper.py", line 406, in _MakeRequestNoRetry
+    check_response_func(response)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/util/apis.py", line 231, in _CheckResponse
+    _CheckForApiEnablementError(response_as_error)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/util/apis.py", line 197, in _CheckForApiEnablementError
+    PromptToEnableApi(*enablement_info)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/util/apis.py", line 174, in PromptToEnableApi
+    api_enable_attempted = api_enablement.PromptToEnableApi(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/util/api_enablement.py", line 78, in PromptToEnableApi
+    enable_api.EnableService(project, service_token)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/services/enable_api.py", line 66, in EnableService
+    op = serviceusage.EnableApiCall(project_id, service_name)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/services/serviceusage.py", line 669, in EnableApiCall
+    exceptions.ReraiseError(e,
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/services/exceptions.py", line 158, in ReraiseError
+    core_exceptions.reraise(klass(api_lib_exceptions.HttpException(err)))
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/core/exceptions.py", line 149, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/snap/google-cloud-cli/289/lib/third_party/six/__init__.py", line 718, in reraise
+    raise value.with_traceback(tb)
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/api_lib/services/serviceusage.py", line 666, in EnableApiCall
+    return client.services.Enable(request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/generated_clients/apis/serviceusage/v1/serviceusage_v1_client.py", line 263, in Enable
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+googlecloudsdk.api_lib.services.exceptions.EnableServicePermissionDeniedException: PERMISSION_DENIED: Permission denied to enable service [cloudbuild.googleapis.com]
+Help Token: AYJSUtkOYDo0mUu0FijQ-0ie6HZUXqHcB-Fzk8DkADrtgT4Q16g31J8Zua2j52bM1RzwB4ENABhSDfR188VhFl4oKohEVtpqLOH8QAK_wGJyTaqN. This command is authenticated as trigger-account@inspired-photon-441609-k7.iam.gserviceaccount.com which is the active account specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=110002&service=serviceusage.googleapis.com&permission=serviceusage.services.enable&resource=inspired-photon-441609-k7
+    type: googleapis.com
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com
+  metadata:
+    permission: serviceusage.services.enable
+    resource: inspired-photon-441609-k7
+    service: serviceusage.googleapis.com
+  reason: AUTH_PERMISSION_DENIED
+2024-11-26 19:22:24,829 ERROR    root            (gcloud.functions.deploy) PERMISSION_DENIED: Permission denied to enable service [cloudbuild.googleapis.com]
+Help Token: AYJSUtkOYDo0mUu0FijQ-0ie6HZUXqHcB-Fzk8DkADrtgT4Q16g31J8Zua2j52bM1RzwB4ENABhSDfR188VhFl4oKohEVtpqLOH8QAK_wGJyTaqN. This command is authenticated as trigger-account@inspired-photon-441609-k7.iam.gserviceaccount.com which is the active account specified by the [core/account] property
+- '@type': type.googleapis.com/google.rpc.PreconditionFailure
+  violations:
+  - subject: ?error_code=110002&service=serviceusage.googleapis.com&permission=serviceusage.services.enable&resource=inspired-photon-441609-k7
+    type: googleapis.com
+- '@type': type.googleapis.com/google.rpc.ErrorInfo
+  domain: serviceusage.googleapis.com
+  metadata:
+    permission: serviceusage.services.enable
+    resource: inspired-photon-441609-k7
+    service: serviceusage.googleapis.com
+  reason: AUTH_PERMISSION_DENIED

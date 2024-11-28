@@ -1,0 +1,8 @@
+2024-11-28 09:43:01,510 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2024-11-28 09:43:01,518 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'enable']
+2024-11-28 09:43:01,520 DEBUG    root            Running [gcloud.services.enable] with arguments: [SERVICE:1: "['cloudbuild.googleapis.com']"]
+2024-11-28 09:43:01,612 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-28 09:43:01,768 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7/services/cloudbuild.googleapis.com:enable?alt=json HTTP/1.1" 200 None
+2024-11-28 09:43:01,774 DEBUG    root            Chosen display Format:none
+2024-11-28 09:43:01,774 INFO     root            Display format: "none"
+2024-11-28 09:43:01,775 DEBUG    root            SDK update checks are disabled.

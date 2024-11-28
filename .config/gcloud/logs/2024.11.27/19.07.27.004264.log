@@ -1,0 +1,8 @@
+2024-11-27 19:07:27,006 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2024-11-27 19:07:27,021 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'enable']
+2024-11-27 19:07:27,024 DEBUG    root            Running [gcloud.services.enable] with arguments: [SERVICE:1: "['eventarc.googleapis.com']"]
+2024-11-27 19:07:27,135 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 19:07:27,280 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7/services/eventarc.googleapis.com:enable?alt=json HTTP/1.1" 200 None
+2024-11-27 19:07:27,288 DEBUG    root            Chosen display Format:none
+2024-11-27 19:07:27,289 INFO     root            Display format: "none"
+2024-11-27 19:07:27,289 DEBUG    root            SDK update checks are disabled.

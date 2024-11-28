@@ -1,0 +1,70 @@
+2024-11-26 09:07:15,250 DEBUG    root            Loaded Command Group: ['gcloud', 'projects']
+2024-11-26 09:07:15,395 DEBUG    root            Loaded Command Group: ['gcloud', 'projects', 'add_iam_policy_binding']
+2024-11-26 09:07:15,430 DEBUG    root            Running [gcloud.projects.add-iam-policy-binding] with arguments: [--member: "serviceAccount:", --role: "roles/iam.roleAdmin", PROJECT_ID: "inspired-photon-441609-k7"]
+2024-11-26 09:07:15,640 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/644941739395-compute@developer.gserviceaccount.com/?recursive=true
+2024-11-26 09:07:15,646 DEBUG    urllib3.connectionpool Starting new HTTP connection (1): metadata.google.internal:80
+2024-11-26 09:07:15,648 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/644941739395-compute@developer.gserviceaccount.com/?recursive=true HTTP/1.1" 200 141
+2024-11-26 09:07:15,692 DEBUG    google.auth.transport.requests Making request: GET http://metadata.google.internal/computeMetadata/v1/instance/service-accounts/644941739395-compute@developer.gserviceaccount.com/token
+2024-11-26 09:07:15,695 DEBUG    urllib3.connectionpool http://metadata.google.internal:80 "GET /computeMetadata/v1/instance/service-accounts/644941739395-compute@developer.gserviceaccount.com/token HTTP/1.1" 200 867
+2024-11-26 09:07:15,718 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-11-26 09:07:15,841 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7:getIamPolicy?alt=json HTTP/1.1" 403 None
+2024-11-26 09:07:31,437 INFO     ___FILE_ONLY___ Enabling service [cloudresourcemanager.googleapis.com] on project [644941739395]...
+
+2024-11-26 09:07:31,521 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-26 09:07:31,744 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/644941739395/services/cloudresourcemanager.googleapis.com:enable?alt=json HTTP/1.1" 200 None
+2024-11-26 09:07:31,764 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-26 09:07:31,869 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acat.p2-644941739395-a14d9b23-0936-485f-ab71-7ce99039c66e?alt=json HTTP/1.1" 200 None
+2024-11-26 09:07:34,408 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-26 09:07:34,508 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acat.p2-644941739395-a14d9b23-0936-485f-ab71-7ce99039c66e?alt=json HTTP/1.1" 200 None
+2024-11-26 09:07:34,512 INFO     ___FILE_ONLY___ Operation "operations/acat.p2-644941739395-a14d9b23-0936-485f-ab71-7ce99039c66e" finished successfully.
+
+2024-11-26 09:07:34,512 DEBUG    root            Request returned no response, retrying
+2024-11-26 09:07:34,512 DEBUG    root            Retrying request to url https://cloudresourcemanager.googleapis.com/v1/projects/inspired-photon-441609-k7:getIamPolicy?alt=json after exception Retry
+2024-11-26 09:07:36,904 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-11-26 09:07:37,120 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7:getIamPolicy?alt=json HTTP/1.1" 200 None
+2024-11-26 09:07:37,155 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): cloudresourcemanager.googleapis.com:443
+2024-11-26 09:07:37,440 DEBUG    urllib3.connectionpool https://cloudresourcemanager.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7:setIamPolicy?alt=json HTTP/1.1" 400 None
+2024-11-26 09:07:37,443 INFO     ___FILE_ONLY___ ERROR: Policy modification failed. For a binding with condition, run "gcloud alpha iam policies lint-condition" to identify issues in condition.
+
+2024-11-26 09:07:37,445 DEBUG    root            (gcloud.projects.add-iam-policy-binding) INVALID_ARGUMENT: Invalid service account ().
+Traceback (most recent call last):
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/cli.py", line 998, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/calliope/backend.py", line 843, in Run
+    resources = command_instance.Run(args)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/util/apis/yaml_command_translator.py", line 1382, in Run
+    raise ex
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/util/apis/yaml_command_translator.py", line 1375, in Run
+    ref, response = self._CommonRun(args)
+                    ^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/util/apis/yaml_command_translator.py", line 455, in _CommonRun
+    response = method.Call(
+               ^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/util/apis/registry.py", line 341, in Call
+    return request_func(global_params=global_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/command_lib/util/apis/registry.py", line 404, in RequestFunc
+    return method(request, global_params=global_params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/googlecloudsdk/generated_clients/apis/cloudresourcemanager/v1/cloudresourcemanager_v1_client.py", line 966, in SetIamPolicy
+    return self._RunMethod(
+           ^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 747, in _RunMethod
+    return self.ProcessHttpResponse(method_config, http_response, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 753, in ProcessHttpResponse
+    self.__ProcessHttpResponse(method_config, http_response, request))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/snap/google-cloud-cli/289/lib/third_party/apitools/base/py/base_api.py", line 612, in __ProcessHttpResponse
+    raise exceptions.HttpError.FromResponse(
+apitools.base.py.exceptions.HttpBadRequestError: HttpError accessing <https://cloudresourcemanager.googleapis.com/v1/projects/inspired-photon-441609-k7:setIamPolicy?alt=json>: response: <{'vary': 'Origin, X-Origin, Referer', 'content-type': 'application/json; charset=UTF-8', 'content-encoding': 'gzip', 'date': 'Tue, 26 Nov 2024 09:07:37 GMT', 'server': 'ESF', 'cache-control': 'private', 'x-xss-protection': '0', 'x-frame-options': 'SAMEORIGIN', 'x-content-type-options': 'nosniff', 'server-timing': 'gfet4t7; dur=243', 'transfer-encoding': 'chunked', 'status': 400}>, content <{
+  "error": {
+    "code": 400,
+    "message": "Invalid service account ().",
+    "status": "INVALID_ARGUMENT"
+  }
+}
+>
+2024-11-26 09:07:37,461 ERROR    root            (gcloud.projects.add-iam-policy-binding) INVALID_ARGUMENT: Invalid service account ().

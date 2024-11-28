@@ -1,0 +1,8 @@
+2024-11-26 19:14:39,919 DEBUG    root            Loaded Command Group: ['gcloud', 'config']
+2024-11-26 19:14:39,992 DEBUG    root            Loaded Command Group: ['gcloud', 'config', 'set']
+2024-11-26 19:14:39,994 DEBUG    root            Running [gcloud.config.set] with arguments: [SECTION/PROPERTY: "account", VALUE: "trigger-account@inspired-photon-441609-k7.iam.gserviceaccount.com"]
+2024-11-26 19:14:40,011 INFO     ___FILE_ONLY___ Updated property [core/account].
+
+2024-11-26 19:14:40,012 DEBUG    root            Chosen display Format:default
+2024-11-26 19:14:40,014 INFO     root            Display format: "default"
+2024-11-26 19:14:40,014 DEBUG    root            SDK update checks are disabled.

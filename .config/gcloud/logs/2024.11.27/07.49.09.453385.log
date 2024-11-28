@@ -1,0 +1,16 @@
+2024-11-27 07:49:09,458 DEBUG    root            Loaded Command Group: ['gcloud', 'services']
+2024-11-27 07:49:09,514 DEBUG    root            Loaded Command Group: ['gcloud', 'services', 'enable']
+2024-11-27 07:49:09,516 DEBUG    root            Running [gcloud.services.enable] with arguments: [SERVICE:1: "['cloudbuild.googleapis.com']"]
+2024-11-27 07:49:09,662 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 07:49:10,108 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "POST /v1/projects/inspired-photon-441609-k7/services/cloudbuild.googleapis.com:enable?alt=json HTTP/1.1" 200 None
+2024-11-27 07:49:10,189 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 07:49:10,435 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p2-644941739395-5884dd3a-5597-4c07-a693-e8db425e419a?alt=json HTTP/1.1" 200 None
+2024-11-27 07:49:13,341 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 07:49:13,536 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p2-644941739395-5884dd3a-5597-4c07-a693-e8db425e419a?alt=json HTTP/1.1" 200 None
+2024-11-27 07:49:16,674 DEBUG    urllib3.connectionpool Starting new HTTPS connection (1): serviceusage.googleapis.com:443
+2024-11-27 07:49:16,840 DEBUG    urllib3.connectionpool https://serviceusage.googleapis.com:443 "GET /v1/operations/acf.p2-644941739395-5884dd3a-5597-4c07-a693-e8db425e419a?alt=json HTTP/1.1" 200 None
+2024-11-27 07:49:16,846 INFO     ___FILE_ONLY___ Operation "operations/acf.p2-644941739395-5884dd3a-5597-4c07-a693-e8db425e419a" finished successfully.
+
+2024-11-27 07:49:16,846 DEBUG    root            Chosen display Format:none
+2024-11-27 07:49:16,847 INFO     root            Display format: "none"
+2024-11-27 07:49:16,847 DEBUG    root            SDK update checks are disabled.
