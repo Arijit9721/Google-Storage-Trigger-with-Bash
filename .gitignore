@@ -1,9 +1,0 @@
-# Ignore everything
-*
-
-# Unignore specific files
-!bucket_trigger.sh
-!main.py
-!README.md
-!requirements.txt
-
