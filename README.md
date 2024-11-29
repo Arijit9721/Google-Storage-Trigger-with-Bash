@@ -55,8 +55,8 @@ Replace placeholder values with actual project details in the script:
 ## ✏️ Script Workflow
 
    - **Python Setup:**
-  - Creates a virtual environment.
-  - Installs required Python dependencies from `requirements.txt`.
+     - Creates a virtual environment.
+     - Installs required Python dependencies from `requirements.txt`.
 
 - **Service Account Configuration:**
   - Sets and activates the provided service account.
