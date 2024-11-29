@@ -9,8 +9,8 @@ This Bash script automates the setup of a GCP project to send email notification
 ## 📕Features
 
    - Automates GCP resource creation and configuration.
-    - Uses SendGrid for email notifications.
-    - Implements two Cloud Functions:
+   - Uses SendGrid for email notifications.
+   - Implements two Cloud Functions:
       -  **GCS-to-Pub/Sub**: Monitors the GCS bucket for new objects and publishes messages to a Pub/Sub topic.
        - **Pub/Sub-to-Email**: Subscribes to the topic and sends email notifications.
    - Handles errors gracefully and includes validation steps.
@@ -20,14 +20,14 @@ This Bash script automates the setup of a GCP project to send email notification
 Before running the script, ensure the following:
 
   - **`GCP Project`**: An active GCP project. 
-   - **`Ubuntu VM`**: A virtual machine running Ubuntu. 
-   - **`Service Account`**: A service account with the following roles:
+  - **`Ubuntu VM`**: A virtual machine running Ubuntu. 
+  - **`Service Account`**: A service account with the following roles:
      - Project IAM Admin( to create custom roles) 
     
-    - **`GCP CLI Tools`**: - `gcloud`  `Python` and `pip` 
-    - **`SendGrid Account`**: A valid **SendGrid** API key.
-     - **`System Requirements`**: - The script must have execution permissions.
-      - The bucket, IAM role, Pub/Sub topic, and Cloud Functions with the same name should **not** pre-exist.
+  - **`GCP CLI Tools`**: - `gcloud`  `Python` and `pip` 
+  - **`SendGrid Account`**: A valid **SendGrid** API key.
+  - **`System Requirements`**: - The script must have execution permissions.
+  - The bucket, IAM role, Pub/Sub topic, and Cloud Functions with the same name should **not** pre-exist.
 
 ## 🛠️  Setting up the Project  
 ## 1. Clone or Copy the Script 
@@ -93,13 +93,15 @@ Monitor the output for error messages or success confirmations. Upon completion:
 The script exits on errors with appropriate messages. Check the logs for any issues with:
 
  -   Dependency installation.
-  -  IAM role creation or binding.
-   - Cloud Function deployment.
+ -  IAM role creation or binding.
+ - Cloud Function deployment.
     
 
 ## 📅 Notes 
 
-   ✅ Ensure all prerequisites are fulfilled before running the script.
-    🔒 Store sensitive information (e.g., API keys) securely using environment variables.
-    🛠 The script is designed for Ubuntu environments with GCP tools pre-installed. Adjustments may be needed for other setups.
+  ✅ Ensure all prerequisites are fulfilled before running the script.
+   
+  🔒 Store sensitive information (e.g., API keys) securely using environment variables.
+  
+  🛠 The script is designed for Ubuntu environments with GCP tools pre-installed. Adjustments may be needed for other setups.
 
